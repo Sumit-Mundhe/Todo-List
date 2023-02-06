@@ -2,37 +2,90 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    /* font-family: 'Cinzel', serif; */
 }
 
 body{
     box-sizing: border-box;
-    background-color: aquamarine;
+    background-color: #312c38;
+    color: #312c38;
 }
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    text-align: center;gap: 1rem;
-    width: 400px;
-    height: 400px;
+    text-align: center;
+    gap: 1rem;
+    width: 450px;
+    height: 600px;
+    /* height: max-content; */
     margin: auto;
-    margin-top: 10%;
+    margin-top: 5%;
     border-radius: 15px;
     box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.08);
-    background-color: antiquewhite;
+    background-color: #f7efe7fc;
+    backdrop-filter: blur(15px);
+}
+h1{
+ margin-top: 1%;   
+ font-size: 50px;
+ margin-bottom: 0;
+ text-shadow: 5px 5px 5px rgba(125, 125, 125, 0.275);
+ font-family: 'Cinzel', serif;
 }
 
-.lists{
-    background-color: rgb(142, 193, 131);
+input{
+    padding: 8px 15px;
     width: 250px;
-    min-height: 200px;
-    height: max-content;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: rgba(183, 165, 165, 0.356);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.241),
+    -3px -3px 1px rgba(255, 255, 255, 0.41);
+    /* spellcheck: false; */
+}
+.lists{
+    background-color: #d0aa82;
+    width: 400px;
+    height: 400px;
+    /* height: max-content; */
+    border-radius: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+li{
+    padding: 3px 15px;
+    text-align: left;
+    list-style: none;
+    background-color: #b8947000;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.758);
+}
+hr{
+    height: 3px;
+    background-color: #e4bc95;
+    border: none;
+    margin: 0px 10px;
 }
 
 button{
+    padding: 2px 15px;
     border: none;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.347);
     font-size: 20px;
-    background-color: rgb(255, 201, 120);
-    padding: 3px;
+    background-color: rgb(131, 236, 135);
+}
+input:focus{
+    background-color: rgba(195, 208, 208, 0.407);
+    border: 4px solid rgb(29, 220, 45);
+}
+button:active{
+    background-color: rgb(212, 160, 82);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.422);
 }
